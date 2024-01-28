@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+
+            box-sizing: border-box;
+        }
+
+        table {
+            border-collapse: collapse;
+
+            border: 2px solid black;
+            width: 70%;
+            margin: auto;
+        }
+
+        a {
+            text-decoration: none;
+            /* text-decoration-color: whitesmoke; */
+            color: black;
+            text-align: center;
+        }
+
+        .app {
+            background-color: red;
+        }
+
+        .menu1 {
+            background-color: red;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+
+        .menu {
+            text-align: center;
+        }
+
+        #image {
+            height: 200px;
+            background-image: url("../image/image1.webp");
+            background-size: cover;
+            background-position: center;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        #image:hover {
+            transition: all ease-in 2.5s;
+            background-position: bottom;
+        }
+
+        .contact-us {
+            text-align: center;
+            background-color: rgb(240, 70, 127);
+        }
+
+        #image2 {
+            background-image: url("https://wallpaperaccess.com/full/1155149.jpg");
+            background-size: cover;
+            background-position: top;
+            height: 200px;
+            text-align: center;
+            color: black;
+            font-weight: 900;
+        }
+
+        #image2:hover {
+            transition: all ease-out 1.5s;
+            background-position: center;
+            color: white;
+            font-weight: 900;
+        }
+
+        .form1 {
+            background-color: aqua;
+        }
+
+        input {
+            margin: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <table border="2" width="100%" height="100%">
+        <nav>
+            <tr>
+                <td rowspan="2" class="menu"><a href="#Home">Home</a></td>
+                <td rowspan="2" class="menu"><a href="#About">About</a></td>
+                <td rowspan="2" class="menu"><a href="#Help">Help</a></td>
+                <td rowspan="2" class="menu"><a href="#Contact">Contact</a></td>
+                <td colspan="2" class="menu1" class="menu"><a href="#Download" class="app"> Download </a></td>
+            </tr>
+            <tr>
+                <td class="menu1" class="menu"><a href="#App" class="app">App</a></td>
+            </tr>
+        </nav>
+        <tr>
+            <td colspan="6" id="image">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" class="contact-us"><a href="#contact">Contact-us</a></td>
+        </tr>
+        <tr>
+            <td colspan="6" id="image2">CONTACT US</td>
+        </tr>
+        <form action="">
+            <tr class="form1">
+                <td colspan="3" align="center">
+                    <label for="fname">First name</label>
+                    <input type="text" id="fname">
+                </td>
+                <td colspan="3" align="center">
+                    <label for="lname">Last name</label>
+                    <input type="text" id="lname">
+                </td>
+            </tr>
+            <tr class="form1">
+                <td colspan="3" align="center">
+                    <label for="email">Email ID &nbsp;</label>
+                    <input type="email" id="email"
+                        pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+                </td>
+                <td colspan="3" align="center">
+                    <label for="phone">Phone no &nbsp;</label>
+                    <input type="tel" id="phone" pattern="[0-9]{10}" required>
+                </td>
+            </tr>
+            <tr class="form1">
+                <td colspan="3" align="center">City
+                    <select name="" id="city">
+                        <option value="">Ahmedabad</option>
+                        <option value="">Surat</option>
+                        <option value="">Vadodara</option>
+                        <option value="">Bharuch</option>
+                        <option value="">jamnagar</option>
+                    </select>
+                </td>
+                <td colspan="3" align="center">
+                    <label for="Gender" name="Gender">Gender &nbsp;&nbsp;&nbsp;</label>
+                    Male <input type="radio" name="Gender">
+                    Female<input type="radio" name="Gender">
+                    Other<input type="radio" name="Gender">
+                </td>
+            </tr>
+        </form>
+        <tr>
+
+            <td colspan="3">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.756724797361!2d72.44286377436794!3d23.032702915951813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9bd60395abc5%3A0x5043c8a98cda3646!2sSurti%20Aloopuri%20Ahmedabad!5e0!3m2!1sen!2sin!4v1706433553715!5m2!1sen!2sin"
+                    width="507" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </td>
+            <td colspan="3">
+                <iframe width="507" height="250" src="https://www.youtube.com/embed/P8P_S1Fjl_Q?si=yjPeaiVZtAqbS62m"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </td>
+        </tr>
+
+
+
+
+
+
+
+    </table>
+</body>
+
+</html>
